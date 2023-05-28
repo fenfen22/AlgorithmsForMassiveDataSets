@@ -71,4 +71,7 @@ if __name__ == "__main__":
         h.InsertItem(x)
 
     h.DisplayHash()
-    h.DeleteItem(12)
+    h.DeleteItem(1)
+    h.DisplayHash()
+    h.DeleteItem(96)
+    h.DisplayHash()
