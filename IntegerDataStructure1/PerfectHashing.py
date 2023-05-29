@@ -25,5 +25,8 @@ class PerfectHashing(object):
         self.__table = [[] for _ in range(bucket)]
         # self.__p = p
 
+
+        # TODO
+
 if __name__ == "__main__":
     S=[1,16,41,54,66,96]

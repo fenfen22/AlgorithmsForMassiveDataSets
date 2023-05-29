@@ -18,7 +18,6 @@ from array import array
 class Bitvector(object):
     def __init__(self,size):
         self.my_array = [0]*size
-        # print(self.my_array)
     
     def add_element(self, element):
         for x in element:
