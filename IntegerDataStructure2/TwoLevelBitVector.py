@@ -25,8 +25,8 @@ class TwoLevelBitvector(object):
     def __init__(self,u):
         self.u = u
         self.sqrt_u = int(math.sqrt(u))
-        self.top_bits = [0]*(u//self.sqrt_u)
-        self.bottom_bits = [[0]*self.sqrt_u for _ in range(u//self.sqrt_u)]
+        self.top_bits = [0] * ((u + self.sqrt_u - 1) // self.sqrt_u)  # Top-level bitvector
+        self.bottom_bits = [[0] * self.sqrt_u for _ in range((u + self.sqrt_u - 1) // self.sqrt_u)]  # Bottom-level bitvectors
     
     # Top bit vector
     def print_top_bits(self):
@@ -100,7 +100,7 @@ class TwoLevelBitvector(object):
 
 if __name__ == "__main__":
     # Initializes the size of the array
-    bitvector = TwoLevelBitvector(36)
+    bitvector = TwoLevelBitvector(38)
 
     # Initializes the array
     elements = [1,3,5,8,6,13,24,27]
