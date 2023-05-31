@@ -1,5 +1,20 @@
 import random
 
+"""
+# This file contains three class, which are HashFunction, SecondaryHT, PerfectHT.
+# 
+# HashFunction: generate universal hashing function randomly based on the number of elements in a specific set
+# 
+# SecondaryHT: collision-free solution, goal of this is to resolve collisions at level 1.
+# while NOW, we could not guarantee "collision-free". With probability 1/2, we could get perfect hashing function, TODO if not perfect try again.
+# 
+# PerfectHT: TODO isMember doesn't work now
+# 
+# The perfect hashing could work! While there are still some problems:
+#
+# 
+# 
+"""
 class HashFunction:
     def __init__(self,n):
         self.m_tize = self.findPrime(n) # table size, must be a prime
@@ -14,6 +29,7 @@ class HashFunction:
     Initializes other hash function parameters randomly
     """
     """
+    # TODO
     Function that maps string to int; return value can be much larger than table size; uses m-multiplier data member
     """
 

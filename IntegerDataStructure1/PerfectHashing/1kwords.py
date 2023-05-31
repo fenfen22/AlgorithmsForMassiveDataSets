@@ -1,4 +1,5 @@
-
+# This file has not been used yet!
+# This is for store strings in perfect hashing table, so the first step needs to convert the string into integer 
 numWords = 1000
 words =  [
 "abbots",
